@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A2107BB-BACF-45CE-8505-B0A8DD56E8E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Manssiere</RootNamespace>
+    <AssemblyName>Manssiere</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BlendModeEffects">
+      <HintPath>..\Sharedlibs\BlendModeEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="C5">
+      <HintPath>..\Sharedlibs\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharedlibs\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharedlibs\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharedlibs\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharedlibs\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Magnum">
+      <HintPath>..\Sharedlibs\Magnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharedlibs\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharedlibs\Microsoft.DirectX.DirectSound.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sharedlibs\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\Sharedlibs\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Animation\PennerDoubleAnimation.cs" />
+    <Compile Include="Core\ApplicationContainer.cs" />
+    <Compile Include="Core\DemoFlow\StateChangeEventArgs.cs" />
+    <Compile Include="Core\DomainEvents\DomainEvents.cs" />
+    <Compile Include="Core\DomainEvents\Events\XamlObjectLoadedEvent.cs" />
+    <Compile Include="Core\DomainEvents\Handlers\BlurEffectReplacer.cs" />
+    <Compile Include="Core\DomainEvents\Handlers\KeyPressedHandler.cs" />
+    <Compile Include="Core\DomainEvents\Handlers\LoadImagesForXamlObject.cs" />
+    <Compile Include="Core\DomainEvents\IDomainEvent.cs" />
+    <Compile Include="Core\DomainEvents\IHandles.cs" />
+    <Compile Include="Core\Graphics\Effects\BlendEffect.cs" />
+    <Compile Include="Core\Graphics\Effects\BlendMode.cs" />
+    <Compile Include="Core\Graphics\Effects\BlurEffect.cs" />
+    <Compile Include="Core\Graphics\Effects\BlurShaderType.cs" />
+    <Compile Include="Core\Graphics\Effects\IEffect.cs" />
+    <Compile Include="Core\Graphics\Framebuffer.cs" />
+    <Compile Include="Core\Graphics\ITexture.cs" />
+    <Compile Include="Core\Graphics\Shader.cs" />
+    <Compile Include="Core\Graphics\Tesselator\ActiveRegion.cs" />
+    <Compile Include="Core\Graphics\Tesselator\ContourVertex.cs" />
+    <Compile Include="Core\Graphics\Tesselator\Dictionary.cs" />
+    <Compile Include="Core\Graphics\Tesselator\Face.cs" />
+    <Compile Include="Core\Graphics\Tesselator\HalfEdge.cs" />
+    <Compile Include="Core\Graphics\Tesselator\mesh.cs" />
+    <Compile Include="Core\Graphics\Tesselator\Tesselator.cs" />
+    <Compile Include="Core\Graphics\Texture.cs" />
+    <Compile Include="Core\Graphics\Transition\CrossFade.cs" />
+    <Compile Include="Core\Graphics\Transition\FadeIn.cs" />
+    <Compile Include="Core\Graphics\Transition\FadeOut.cs" />
+    <Compile Include="Core\Graphics\Transition\ITransition.cs" />
+    <Compile Include="Core\Graphics\Transition\Swipe.cs" />
+    <Compile Include="Core\Graphics\Transition\TransitionPresenter.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\Buffers\BufferObject.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\Buffers\ColorBuffer.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\Buffers\ElementBuffer.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\Buffers\NormalBuffer.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\Buffers\TexCoordBuffer.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\Buffers\VertexAttribBuffer.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\Buffers\VertexBuffer.cs" />
+    <Compile Include="Core\Graphics\VertexArayUtility\VertexArray.cs" />
+    <Compile Include="Core\Graphics\Xaml\CanvasRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\ControlRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\FramebufferRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\ImageRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\IXamlRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\PathRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\ShapeRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\Viewport3DRenderer.cs" />
+    <Compile Include="Core\Graphics\Xaml\XamlRenderer.cs" />
+    <Compile Include="Core\Helpers\DcSafeHandle.cs" />
+    <Compile Include="Core\Helpers\DeviceHelper.cs" />
+    <Compile Include="Core\Helpers\DispatcherHelper.cs" />
+    <Compile Include="Core\Helpers\DemoDependencyHelper.cs" />
+    <Compile Include="Core\Helpers\FullScreenHelper.cs" />
+    <Compile Include="Core\Helpers\GlHelper.cs" />
+    <Compile Include="Core\Helpers\MathHelper.cs" />
+    <Compile Include="Core\Helpers\MonitorHelper.cs" />
+    <Compile Include="Core\Helpers\TesselateHelper.cs" />
+    <Compile Include="Core\Helpers\UnsafeNativeMethods.cs" />
+    <Compile Include="Core\Helpers\XamlHelper.cs" />
+    <Compile Include="Core\Infrastructure\DelayExecuter.cs" />
+    <Compile Include="Core\Infrastructure\Job.cs" />
+    <Compile Include="Core\Rendering\InitializeOpenGl.cs" />
+    <Compile Include="Core\DomainEvents\Events\KeyPressedEvent.cs" />
+    <Compile Include="Core\Rendering\OpenglRendering.cs" />
+    <Compile Include="Core\Rendering\WpfRendering.cs" />
+    <Compile Include="Core\Components\PresenterWindow.xaml.cs">
+      <DependentUpon>PresenterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\DemoFlow\Statemachine.cs" />
+    <Compile Include="Core\Helpers\ScreenshotHelper.cs" />
+    <Compile Include="Core\Configuration.cs" />
+    <Compile Include="Core\Infrastructure\ResourceLoader.cs" />
+    <Compile Include="Core\DisposableAction.cs" />
+    <Compile Include="Core\Infrastructure\XamlLoader.cs" />
+    <Compile Include="Core\Infrastructure\WindsorAdapter.cs" />
+    <Compile Include="DemoFlow.cs" />
+    <Compile Include="Effects\LoonyGears.xaml.cs">
+      <DependentUpon>LoonyGears.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effects\ScotchYokeUserControl.xaml.cs">
+      <DependentUpon>ScotchYokeUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effects\StamperScene.xaml.cs">
+      <DependentUpon>StamperScene.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effects\Viewport3DTestWindow.xaml.cs">
+      <DependentUpon>Viewport3DTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Core\Components\PresenterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Effects\LoonyGears.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Effects\ScotchYokeUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Effects\StamperScene.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Effects\Viewport3DTestWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Media\Image39.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

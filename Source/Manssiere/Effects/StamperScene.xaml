@@ -1,0 +1,107 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Manssiere.Effects.StamperScene"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480" Width="1920" Height="1080">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="Storyboard1"  RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="1440"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="-1440"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="720"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="-720"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="1080"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image5" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="-1080"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image6" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="1000"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image7" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="-1000"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image8" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="1440"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:01:00" Value="-1440"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:04" Storyboard.TargetName="Scene_03" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:02.666667" Value="90" KeySpline="0.92,0,0.2,1"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:06.666667" Value="90"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:08.000001" Value="0" KeySpline="0.92,0,0.2,1"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:11.9000000" Value="0.29278418306304843"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:13.5000000" Value="0.2252185850316788"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Scene_03" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="-1600"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:07.8000000" Value="-1600"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:08" Value="-1600"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:11.9000000" Value="-1600"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:13.5000000" Value="-2100"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard2">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Crank" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" RepeatBehavior="Forever">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:01.4000000" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FocusManager.GotFocus"/>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard2}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+
+
+    <Canvas x:Name="LayoutRoot" Background="White">
+		<Canvas x:Name="Stamp1" Width="868.517" Height="1499" Canvas.Left="315.826" Canvas.Top="-122.5" RenderTransformOrigin="0.5,0.5">
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+					<SkewTransform/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+            <Image x:Name="Crank" Source="/Manssiere;Component/Media/Image39.png" Stretch="Fill" Width="1165" Height="1165" RenderTransformOrigin="0.5,0.5" Canvas.Left="-2916" Canvas.Top="-1554">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="0.75" ScaleY="0.75"/>
+						<SkewTransform/>
+						<RotateTransform Angle="-720"/>
+						<TranslateTransform X="2800.375" Y="1408.375"/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+			<Path x:Name="PistonRod" Fill="Red" Width="109" Height="683" RenderTransformOrigin="0.481,0.922" Canvas.Left="405.517" Canvas.Top="166.413" Data="M55.528427,0.00027990322 C77.056804,0.06968845 97.360534,13.050974 105.66784,34.24096 C113.46653,54.133607 108.57015,75.846275 94.884307,90.500017 L93.342498,92.072054 L91.060026,474.2403 L91.033751,474.24018 L90.420149,558.14609 L91.123335,558.77609 C96.839553,564.15359 101.46111,570.86392 104.45577,578.67013 C115.10343,606.42543 101.1518,637.52405 73.293918,648.1308 C66.764726,650.61676 60.051125,651.75647 53.461131,651.68701 C31.933829,651.46014 11.725564,638.33075 3.5734429,617.08058 C-4.0795724,597.13143 0.97544872,575.4551 14.768102,560.90182 L16.321377,559.3411 L16.946635,473.84189 L16.93672,473.84186 L19.25446,93.808923 L18.546679,93.184053 C12.791302,87.848544 8.1207963,81.172178 5.0691321,73.388101 C-5.78122,45.711376 7.9426175,14.511582 35.722191,3.7013998 C42.233018,1.167763 48.938105,-0.020973826 55.528427,0.00027990322 z" Stretch="Fill"/>
+			<Canvas Width="1583.233" Height="1232.681" Canvas.Left="406.5" Canvas.Top="321.317" >	
+				<Path x:Name="PistonTwo" Fill="Black" Stretch="Fill" Width="105" Height="808.498" Data="M52.499992,0 C81.494942,0 104.99999,23.505051 104.99998,52.499992 104.99999,68.809662 97.562851,83.382278 85.894859,93.011551 L85.333996,93.452316 85.333996,165.00001 70.499989,165.00001 69.499989,808.49811 32.500003,808.49811 33.500003,165.00001 19.333981,165.00001 19.333981,93.191406 19.105125,93.011551 C7.4371376,83.382278 -7.6293945E-06,68.809662 0,52.499992 -7.6293945E-06,23.505051 23.505042,0 52.499992,0 z" Canvas.Top="424.183"/>	
+			</Canvas>	
+		</Canvas>
+	</Canvas>
+</UserControl>

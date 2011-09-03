@@ -1,0 +1,23 @@
+﻿<Window x:Name="window" 
+        x:Class="Manssiere.Core.Components.PresenterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:Transition="clr-namespace:Manssiere.Core.Graphics.Transition" 
+        Background="Black" 
+        SizeToContent="WidthAndHeight" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize">
+
+    <Canvas x:Name="LayoutRoot">
+        <Canvas.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Canvas.RenderTransform>
+        <Transition:TransitionPresenter x:Name="TransitionPresenter">
+        </Transition:TransitionPresenter>
+    </Canvas>
+</Window>
