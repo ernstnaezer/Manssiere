@@ -1,3 +1,5 @@
+![stability-deprecated](https://img.shields.io/badge/stability-deprecated-red.svg)
+
 Manssiere
 =========
 Manssiere is a play project for rendering WPF/XAML elements in OpenGL.
@@ -41,15 +43,6 @@ The following XAML elements can be rendered in opengl:
 The Microsoft XAML engine is abused to do the heavy lifting. They have defined a really nice hierarchical system for defining graphical elements in 2d space and applying transformations to those object over time using keyframers. The rendering engine simulates a timer that triggers WPF to update the internal state of the elements, after this is done we simply itterate over the result and tesselate this to an opengl canvas.
 
 There is a lot more stuff inside but it's all more or less testing code. So just dive in and take a look.
-
-Screenshots
------------
-![screenshot](http://blog.ernstnaezer.nl/image.axd?picture=2011%2f9%2fscreenshot+-+2011-09-03+17.53.35.png)
-![screenshot](http://blog.ernstnaezer.nl/image.axd?picture=2011%2f9%2fscreenshot+-+2011-09-03+18.11.22.png)
-![screenshot](http://blog.ernstnaezer.nl/image.axd?picture=2011%2f9%2fscreenshot+-+2011-09-03+18.11.23.png)
-![screenshot](http://blog.ernstnaezer.nl/image.axd?picture=2011%2f9%2fscreenshot+-+2011-09-03+18.31.21.png)
-![screenshot](http://blog.ernstnaezer.nl/image.axd?picture=2011%2f9%2fscreenshot+-+2011-09-03+18.31.20.png)
-![screenshot](http://blog.ernstnaezer.nl/image.axd?picture=2011%2f9%2fscreenshot+-+2011-09-03+18.35.01.png)
 
 License
 -------
